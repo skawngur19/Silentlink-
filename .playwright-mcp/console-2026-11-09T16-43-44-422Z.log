@@ -1,0 +1,19 @@
+[    3729ms] [ERROR] Firebase account initialization failed. FirebaseError: Missing or insufficient permissions. @ http://127.0.0.1:3000/app.js:887
+[   40603ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[   40609ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[   40720ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[   40723ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[  546790ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[  546798ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[  546800ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[  546801ms] [WARNING] <i data-lucide="scan-hand" aria-hidden="true"></i> icon name was not found in the provided icons object. @ http://127.0.0.1:3000/assets/lucide.min.js:7
+[  899230ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCD62__c-pmP0l-lft9zeNKWzZi7AsNKtI:0
+[  899243ms] [ERROR] Firebase sign-in failed. FirebaseError: Firebase: The supplied auth credential is incorrect, malformed or has expired. (auth/invalid-credential).
+    at B (https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js:1:23155)
+    at j (https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js:1:22410)
+    at se (https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js:1:28843)
+    at async ae (https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js:1:28975)
+    at async Mt (https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js:1:75867) @ http://127.0.0.1:3000/app.js:828
+[ 1025874ms] [ERROR] Firebase account initialization failed. Error: Your account is missing its SilentLink role profile.
+    at Object.loadProfile (http://127.0.0.1:3000/firebase.js:23:21)
+    at async http://127.0.0.1:3000/app.js:870:23 @ http://127.0.0.1:3000/app.js:887

@@ -1,0 +1,113 @@
+- generic [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#app"
+  - generic [ref=f1e42]:
+    - banner [ref=f1e43]:
+      - link "SilentLink home" [ref=f1e44] [cursor=pointer]:
+        - /url: "#/teacher/dashboard"
+        - generic [ref=f1e51]: SilentLink
+      - navigation "Teacher navigation" [ref=f1e52]:
+        - link "Dashboard" [ref=f1e53] [cursor=pointer]:
+          - /url: "#/teacher/dashboard"
+        - link "Repository" [ref=f1e59] [cursor=pointer]:
+          - /url: "#/teacher/repository"
+        - link "Builder" [ref=f1e62] [cursor=pointer]:
+          - /url: "#/teacher/builder"
+        - link "Progress" [ref=f1e66] [cursor=pointer]:
+          - /url: "#/teacher/progress"
+        - link "Recognition Beta" [ref=f1e68] [cursor=pointer]:
+          - /url: "#/teacher/recognition"
+          - text: Recognition
+          - generic [ref=f1e69]: Beta
+        - link "Sign search Beta" [ref=f1e70] [cursor=pointer]:
+          - /url: "#/teacher/sign-search"
+          - text: Sign search
+          - generic [ref=f1e78]: Beta
+      - generic [ref=f1e79]:
+        - link "Settings and privacy" [ref=f1e80] [cursor=pointer]:
+          - /url: "#/teacher/settings"
+        - button "Help and scope" [ref=f1e84] [cursor=pointer]
+        - button "ST Smoke Test" [ref=f1e88] [cursor=pointer]:
+          - generic [ref=f1e89]: ST
+          - generic [ref=f1e90]: Smoke Test
+    - main [ref=f1e95]:
+      - generic [ref=f1e96]:
+        - generic [ref=f1e98]:
+          - heading "Sign recognition Prototype" [level=1] [ref=f1e99]:
+            - text: Sign recognition
+            - generic [ref=f1e100]: Prototype
+          - paragraph [ref=f1e101]: Collect labeled examples and compare new hand movements with those examples on this device.
+        - generic [ref=f1e105]:
+          - strong [ref=f1e106]: Research prototype—not for grading or care decisions.
+          - text: Use only with school and guardian approval. No names or video are stored; landmark samples stay in memory until you export them. Refreshing the page clears them.
+        - generic [ref=f1e107]:
+          - generic [ref=f1e108]:
+            - generic [ref=f1e109]:
+              - generic [ref=f1e110]:
+                - generic [ref=f1e111]: Sign label for the sample
+                - combobox "Sign label for the sample" [ref=f1e112]:
+                  - option "Hello" [selected]
+                  - option "Thank you"
+                  - option "Please"
+                  - option "Yes"
+                  - option "Mom"
+                  - option "Dad"
+                  - option "Eat"
+                  - option "Drink"
+                  - option "Happy"
+              - generic [ref=f1e113] [cursor=pointer]:
+                - checkbox "Approval confirmed I confirm school approval and guardian consent are in place for this participant." [ref=f1e114]
+                - generic [ref=f1e115]:
+                  - strong [ref=f1e116]: Approval confirmed
+                  - text: I confirm school approval and guardian consent are in place for this participant.
+              - generic [ref=f1e117]:
+                - button "Start camera" [active] [ref=f1e118] [cursor=pointer]
+                - button "Stop camera" [disabled] [ref=f1e122]
+                - button "Record 2-second sample" [disabled] [ref=f1e127]
+              - status [ref=f1e131]: Confirm school approval and guardian consent before starting the camera.
+            - generic [ref=f1e132]: Camera preview appears here. The app does not save video.
+            - generic [ref=f1e141]:
+              - generic [ref=f1e142]:
+                - heading "Closest example" [level=2] [ref=f1e143]
+                - paragraph [ref=f1e144]: Experimental nearest-example result; not a validated sign prediction.
+              - strong [ref=f1e145]: Waiting for samples
+          - generic [ref=f1e146]:
+            - generic [ref=f1e147]:
+              - generic [ref=f1e149]:
+                - heading "Training examples" [level=2] [ref=f1e150]
+                - generic [ref=f1e151]: Aim for at least 5 samples per sign and varied repetitions.
+              - generic [ref=f1e152]:
+                - generic [ref=f1e153]:
+                  - generic [ref=f1e154]: Hello
+                  - strong [ref=f1e155]: 0 samples
+                - generic [ref=f1e156]:
+                  - generic [ref=f1e157]: Thank you
+                  - strong [ref=f1e158]: 0 samples
+                - generic [ref=f1e159]:
+                  - generic [ref=f1e160]: Please
+                  - strong [ref=f1e161]: 0 samples
+                - generic [ref=f1e162]:
+                  - generic [ref=f1e163]: "Yes"
+                  - strong [ref=f1e164]: 0 samples
+                - generic [ref=f1e165]:
+                  - generic [ref=f1e166]: Mom
+                  - strong [ref=f1e167]: 0 samples
+                - generic [ref=f1e168]:
+                  - generic [ref=f1e169]: Dad
+                  - strong [ref=f1e170]: 0 samples
+                - generic [ref=f1e171]:
+                  - generic [ref=f1e172]: Eat
+                  - strong [ref=f1e173]: 0 samples
+                - generic [ref=f1e174]:
+                  - generic [ref=f1e175]: Drink
+                  - strong [ref=f1e176]: 0 samples
+                - generic [ref=f1e177]:
+                  - generic [ref=f1e178]: Happy
+                  - strong [ref=f1e179]: 0 samples
+              - generic [ref=f1e180]:
+                - button "Import JSON" [ref=f1e181] [cursor=pointer]
+                - button "Export samples" [disabled] [ref=f1e185]
+                - button "Clear samples" [disabled] [ref=f1e189]
+            - generic [ref=f1e193]: The recognizer uses MediaPipe hand landmarks and a nearest-example comparison. It is not trained for ASL accuracy; test it with independent signers before relying on any result.
+  - status
+  - button "Prototype controls and camera states" [ref=f1e196] [cursor=pointer]

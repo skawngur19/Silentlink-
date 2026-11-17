@@ -1,0 +1,3 @@
+[   10496ms] [ERROR] Firebase account initialization failed. Error: Your SilentLink role profile is invalid.
+    at Object.loadProfile (http://localhost:3000/firebase.js:30:21)
+    at async http://localhost:3000/app.js:870:23 @ http://localhost:3000/app.js:887

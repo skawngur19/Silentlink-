@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#app"
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - link "SilentLink" [ref=e28] [cursor=pointer]:
+        - /url: "#/login"
+      - heading "Sign in" [level=1] [ref=e37]
+      - alert [ref=e38]: Your SilentLink role profile is invalid.
+      - generic [ref=e42]:
+        - text: This Firebase account needs a Firestore role profile. In the
+        - code [ref=e43]: users
+        - text: "collection, create a document with this ID:"
+        - code [ref=e44]: RidUyY5xldbucX29WiYchXqDD1V2
+        - text: . Add a string field
+        - code [ref=e45]: role
+        - text: "with the account type you want:"
+        - code [ref=e46]: learner
+        - text: ","
+        - code [ref=e47]: teacher
+        - text: ", or"
+        - code [ref=e48]: consultant
+        - text: . For a learner account, you can also add a string field
+        - code [ref=e49]: name
+        - text: with a classroom nickname. Then sign out and sign in again.
+      - button "Sign out of Firebase" [ref=e50] [cursor=pointer]
+  - status
+  - button "Prototype controls and camera states" [ref=e51] [cursor=pointer]
